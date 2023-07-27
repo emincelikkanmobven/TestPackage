@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cr6-Yh-gGv">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestPackage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Y3X-ze-QPz">
+                                <rect key="frame" x="106.66666666666669" y="744" width="180" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieu-AK-haI" customClass="LoginButton" customModule="CustomButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Gde-H0-bGM"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="pZJ-kj-83i"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ra-IZ-hvv" customClass="LoginButton" customModule="CustomButton">
+                                        <rect key="frame" x="67.999999999999986" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="ESl-Yq-No3"/>
+                                            <constraint firstAttribute="height" constant="44" id="qT5-Lq-GMj"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic5-y1-M3k" customClass="LoginButton" customModule="CustomButton">
+                                        <rect key="frame" x="136" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" systemColor="tintColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="GEK-bI-3sg"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="hvi-FR-KS4"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3we-81-nUO">
+                                <rect key="frame" x="333" y="123" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Nvv-vu-EQR"/>
+                                    <constraint firstAttribute="width" constant="40" id="xHO-3J-Wfz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.right.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="switchPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mv6-g2-Qtj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3we-81-nUO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="FKt-sb-e4L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y3X-ze-QPz" secondAttribute="bottom" constant="30" id="HVc-Gd-Bca"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3we-81-nUO" secondAttribute="trailing" constant="20" id="Rb4-5M-QLp"/>
+                            <constraint firstItem="Y3X-ze-QPz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nnr-lJ-TxR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="u2I-50-phl"/>
+                    <connections>
+                        <outlet property="facebookButton" destination="7ra-IZ-hvv" id="fll-eI-9hQ"/>
+                        <outlet property="googleButton" destination="Ic5-y1-M3k" id="d04-fE-bvH"/>
+                        <outlet property="twitterButton" destination="ieu-AK-haI" id="139-Vc-U1Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759.5419847328244" y="-54.225352112676056"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="zPj-yw-yVy">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="eUE-h4-HhM" customClass="SecondViewController" customModule="TestPackage" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wsQ-E5-1pO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bT-Bd-1dx" customClass="LoginButton" customModule="CustomButton">
+                                <rect key="frame" x="152.66666666666666" y="394.66666666666669" width="88" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="ZiC-7t-l51"/>
+                                    <constraint firstAttribute="height" constant="88" id="dQq-m9-AH5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0h2-9U-2Ae"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7bT-Bd-1dx" firstAttribute="centerX" secondItem="0h2-9U-2Ae" secondAttribute="centerX" id="JWL-Is-Z82"/>
+                            <constraint firstItem="7bT-Bd-1dx" firstAttribute="centerY" secondItem="0h2-9U-2Ae" secondAttribute="centerY" id="YGK-im-nIl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customButon" destination="7bT-Bd-1dx" id="vD8-Tp-NM2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QEY-sl-kI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1503" y="-54"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zWD-TC-jN5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cr6-Yh-gGv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1fD-pf-COH">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Tc4-6I-RgE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YnQ-xQ-DkB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-167.17557251908397" y="-54.225352112676056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
